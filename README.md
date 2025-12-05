@@ -90,3 +90,28 @@ docker-compose down
 ```
 Leállítja és törli a konténereket.
 A képeket nem törli, újra build nélkül is indítható.
+
+## Dev Container ##
+
+A projekt Dev Containerben is futtatható VS Code vagy GitHub Codespaces segítségével.
+
+## Indítás VS Code-ban
+
+1. Nyisd meg a projektet VS Code-ban.
+2. Telepítsd a "Remote - Containers" kiegészítőt.
+3. `F1` → `Remote-Containers: Open Folder in Container` → válaszd a projekt gyökerét.
+4. A konténer létrejön, lefut a `postCreateCommand` (npm install), és a portok át lesznek forward-olva (8080 backend, 8081 frontend).
+
+## Futtatás a konténerben
+
+
+# Backend
+```bash
+cd backend
+npm run start
+```
+# Frontend
+```bash
+cd frontend
+npm run preview
+```
