@@ -1,4 +1,4 @@
-eadando-devops – Build útmutató
+beadando-devops – Build útmutató
 
 Ez a projekt két különálló alkalmazásból áll:
 
