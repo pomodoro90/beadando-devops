@@ -1,0 +1,17 @@
+{
+  "name": "Beadando Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "forwardPorts": [8080, 8081],
+  "postCreateCommand": "npm install",
+  "remoteUser": "node",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint"
+  ]
+}
